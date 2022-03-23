@@ -83,21 +83,21 @@ int main()
         printf("\nErro alocando memoria! \n");
         exit( EXIT_FAILURE );
     }
- //Aloca na memÛria, determina que o tamanho dela È N * N, e verifica se n„o È null, ou seja, tem tamanho definido.
+ //Aloca na mem√≥ria, determina que o tamanho dela √© N * N, e verifica se n√£o √© null, ou seja, tem tamanho definido.
  
 	printf("::: Matrix Multiplication \n");
 	printf("::: Width: %d | Height: %d | Total Size: %d \n", N, N, N*N);
 	printf("::: Preenchendo as matrizes... ");
 
     PreencheMatriz(N, N, MatrizA, 1);
-   // PreencheMatriz(N, N, MatrizB, 3);
-   // PreencheMatriz(N, N, MatrizC, 0);
-    //FunÁ„o que vai preencher a matriz (L,C, qual a matriz, valor que vai ser inserido nela)
+    PreencheMatriz(N, N, MatrizB, 3);
+    PreencheMatriz(N, N, MatrizC, 0);
+    //Fun√ß√£o que vai preencher a matriz (L,C, qual a matriz, valor que vai ser inserido nela)
 
 	printf("Done! Now calculating...\n");
     //MostraMatriz(N, N, MatrizA, " Matriz A ");
     //MostraMatriz(N, N, MatrizB, " Matriz B ");
-    //MostraMatriz(N, N, MatrizC, " Matriz C ");
+     MostraMatriz(N, N, MatrizC, " Matriz C ");
 
     int L, C, K;
 
